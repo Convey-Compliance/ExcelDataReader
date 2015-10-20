@@ -15,7 +15,6 @@ namespace ExcelDataReader.Portable.Core.BinaryFormat
 		private readonly XlsHeader m_hdr;
 		private readonly int m_sectors;
 		private readonly int m_sectors_for_fat;
-		private readonly int m_sectorSize;
 		private readonly bool m_isMini;
 		private readonly XlsRootDirectory m_rootDir = null;
 

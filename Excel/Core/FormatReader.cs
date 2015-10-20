@@ -23,7 +23,6 @@ namespace Excel.Core
 			var dateChars = new char[] { 'y', 'm', 'd', 's', 'h', 'Y', 'M', 'D', 'S', 'H' };
 			if (FormatString.IndexOfAny(dateChars) >= 0)
 			{
-				var isDate = false;
 				//it is a date candidate
 				foreach (var dateChar in dateChars)
 				{

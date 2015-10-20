@@ -188,7 +188,7 @@ namespace Excel.Core
 					Directory.Delete(_tempPath, true);
 				}
 			}
-			catch (IOException ex)
+			catch (IOException)
 			{
 				//TODO: minimally add some logging so we know this happened. log4net?
 				if (!catchIoError)

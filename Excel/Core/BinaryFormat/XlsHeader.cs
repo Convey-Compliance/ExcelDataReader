@@ -174,10 +174,9 @@ namespace ExcelDataReader.Portable.Core.BinaryFormat
 				return m_minifat;
 
 			//if no minifat then return null
-			if (MiniFatSectorCount == 0 || MiniSectorSize == 0xFFFFFFFE)
+			if (MiniFatSectorCount == 0)
 				return null;
 
-			uint value;
 			int miniSectorSize = MiniSectorSize;
 			List<uint> sectors = new List<uint>(MiniFatSectorCount);
 
